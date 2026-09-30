@@ -1,0 +1,40 @@
+html[dir="rtl"] body{text-align:right}html[dir="rtl"] .navlinks{margin-left:0;margin-right:auto}html[dir="rtl"] .eyebrow::before{order:2}html[dir="rtl"] .hero-visual>img{margin-left:0;margin-right:auto}html[dir="rtl"] .float-top,html[dir="rtl"] .float-bottom{left:auto;right:0}html[dir="rtl"] .process-item{padding-left:0;padding-right:74px}html[dir="rtl"] .process-item::before{left:auto;right:0}html[dir="rtl"] .process-item::after{left:auto;right:25px}html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}html[dir="rtl"] .sidebar{right:0;left:auto}@media(max-width:1024px){html[dir="rtl"] .sidebar{right:-280px;left:auto}html[dir="rtl"] .sidebar.open{right:0}}
+html[dir="rtl"] .nav-drop-menu{left:auto;right:50%;transform:translate(50%,10px)}
+html[dir="rtl"] .nav-dropdown:hover .nav-drop-menu,html[dir="rtl"] .nav-dropdown:focus-within .nav-drop-menu{transform:translate(50%,0)}
+html[dir="rtl"] .page-testdetails .page-hero .container{border-left:0;border-right:6px solid var(--primary);padding-left:0;padding-right:34px}
+html[dir="rtl"] .page-blogdetails .page-hero{border-right:0;border-left:18px solid var(--primary)}
+
+/* RTL/LTR layout toggle: mirror positions only; keep English text LTR/readable. */
+html[dir="rtl"] body {
+  text-align: left;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] p,
+html[dir="rtl"] a,
+html[dir="rtl"] span,
+html[dir="rtl"] small,
+html[dir="rtl"] strong,
+html[dir="rtl"] em,
+html[dir="rtl"] label,
+html[dir="rtl"] button,
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select,
+html[dir="rtl"] option,
+html[dir="rtl"] li,
+html[dir="rtl"] th,
+html[dir="rtl"] td {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] th,
+html[dir="rtl"] td {
+  text-align: left;
+}

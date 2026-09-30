@@ -1,0 +1,221 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Create Patient Account | VitaCheck</title>
+    <meta content="Secure patient portal access." name="description" />
+    <meta content="#2E6B4E" name="theme-color" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/site-custom.css" rel="stylesheet" />
+    <link href="assets/css/dark-mode.css" rel="stylesheet" />
+    <link href="assets/css/rtl.css" rel="stylesheet" />
+  </head>
+  <body class="page-register">
+    <a class="skip-link" href="#main"> Skip to content </a>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/images/vitacheck-logo.svg" alt="VitaCheck Diagnostics" />
+        </a>
+        <nav aria-label="Primary" class="navlinks">
+          <div class="nav-dropdown">
+            <a class="nav-drop-trigger" href="index.html">
+              Home
+              <i class="bi bi-chevron-down"> </i>
+            </a>
+            <div class="nav-drop-menu">
+              <a href="index.html"> Home 1 </a>
+              <a href="home-2.html"> Home 2 </a>
+            </div>
+          </div>
+          <a class="" href="tests.html"> Tests </a>
+          <a class="" href="services.html"> Services </a>
+          <a class="" href="about.html"> About Us </a>
+          <a class="" href="blog.html"> Blog </a>
+          <a class="" href="contact.html"> Contact Us </a>
+        </nav>
+        <div class="nav-actions">
+          <button aria-label="Toggle RTL" class="icon-btn" data-rtl-toggle="">
+            RTL
+          </button>
+          <button
+            aria-label="Toggle theme"
+            class="icon-btn"
+            data-theme-toggle=""
+          >
+            <i class="bi bi-moon-stars"> </i>
+          </button>
+          <a class="btn btn-outline" href="login.html"> My Reports </a>
+          <a class="btn btn-primary" href="tests.html"> Book a Test </a>
+          <button
+            aria-expanded="false"
+            aria-label="Menu"
+            class="icon-btn menu-btn"
+            data-menu-toggle=""
+          >
+            <i class="bi bi-list"> </i>
+          </button>
+        </div>
+      </div>
+      <nav
+        class="mobile-menu container"
+        style="gap: 10px; padding: 12px 0 18px"
+      >
+        <div class="mobile-home-group">
+          <span> Home </span>
+          <a href="index.html"> Home 1 </a>
+          <a href="home-2.html"> Home 2 </a>
+        </div>
+        <a href="tests.html"> Tests </a>
+        <a href="services.html"> Services </a>
+        <a href="about.html"> About Us </a>
+        <a href="blog.html"> Blog </a>
+        <a href="contact.html"> Contact Us </a>
+        <a href="login.html"> My Reports </a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="section page-hero-login" style="background-image: url('assets/images/backgrounds/register-hero.svg');">
+        <div aria-hidden="true" class="medical-motif motif-register">
+          <span class="medical-float mf-1">
+            <i class="bi bi-person-plus-fill"> </i>
+          </span>
+          <span class="medical-float mf-2">
+            <i class="bi bi-heart-pulse-fill"> </i>
+          </span>
+          <span class="medical-float mf-3">
+            <i class="bi bi-shield-check"> </i>
+          </span>
+        </div>
+        <div class="container" style="max-width: 980px">
+          <div class="grid grid-2">
+            <div>
+              <span class="eyebrow"> Secure portal </span>
+              <h1 style="font-size: clamp(2.8rem, 7vw, 5rem)">
+                Create Patient Account
+              </h1>
+              <p class="lead">
+                Book tests, upload prescriptions, track samples and download
+                completed reports.
+              </p>
+              <img
+                alt="Report portal preview"
+                src="assets/images/dashboard/report-preview.jpg"
+                style="border-radius: 28px; margin-top: 26px"
+              />
+            </div>
+            <form
+              class="card form-grid"
+              data-auth-form="register"
+              style="align-self: center"
+            >
+              <div class="field full">
+                <span class="badge"> Patient access </span>
+              </div>
+              <div class="field">
+                <label> Full name </label>
+                <input name="name" required autocomplete="name" />
+                <span class="error"> </span>
+              </div>
+              <div class="field">
+                <label> Email </label>
+                <input name="email" required type="email" autocomplete="email" />
+                <span class="error"> </span>
+              </div>
+              <div class="field">
+                <label> Password </label>
+                <input name="password" required type="password" autocomplete="new-password" />
+                <span class="error"> </span>
+              </div>
+              <div class="field full">
+                <button class="btn btn-primary">Continue</button>
+                <span class="muted" data-form-message=""> </span>
+              </div>
+              <div class="field full">
+                <a href="login.html">Already have an account? Sign in →</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer-modern footer-redesign">
+  <div class="container footer-redesign-shell">
+    <div class="footer-redesign-top">
+      <div class="footer-redesign-brand">
+        <a class="brand footer-brand" href="index.html" aria-label="VitaCheck Diagnostics home">
+          <img class="brand-logo" src="assets/images/vitacheck-logo.svg" alt="VitaCheck Diagnostics" />
+        </a>
+        <p>Clear testing, convenient collection and secure digital reports — designed to make every step of your lab journey easier to follow.</p>
+      </div>
+      <div class="footer-redesign-cta">
+        <span class="footer-redesign-eyebrow">PATIENT SUPPORT</span>
+        <strong>Ready to take the next step?</strong>
+        <div class="footer-redesign-actions">
+          <a class="footer-redesign-btn footer-redesign-btn-primary" href="tests.html"><i class="bi bi-calendar2-check"></i> Book a Test</a>
+          <a class="footer-redesign-btn" href="contact.html"><i class="bi bi-headset"></i> Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-redesign-divider" aria-hidden="true"></div>
+
+    <div class="footer-redesign-grid">
+      <div class="footer-redesign-column">
+        <h3>Testing</h3>
+        <a href="tests.html">All Tests</a>
+        <a href="test-details.html">Test Details</a>
+        <a href="home-collection.html">Home Collection</a>
+        <a href="pricing.html">Health Packages</a>
+        <a href="services.html">Lab Services</a>
+      </div>
+      <div class="footer-redesign-column">
+        <h3>Explore</h3>
+        <a href="about.html">About Us</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="blog.html">Health Guides</a>
+        <a href="service-details.html">Service Details</a>
+        <a href="contact.html">Help &amp; Contact</a>
+      </div>
+      <div class="footer-redesign-column">
+        <h3>Patient Access</h3>
+        <a href="register.html">Create Account</a>
+        <a href="login.html">Sign In</a>
+        <a href="patient-dashboard.html">Patient Dashboard</a>
+        <a href="reports.html">My Reports</a>
+        <a href="forgot-password.html">Reset Password</a>
+      </div>
+      <div class="footer-redesign-column footer-redesign-support">
+        <h3>Quick Help</h3>
+        <p>Need help with booking, sample collection or report access? Start with the option that matches your need.</p>
+        <a class="footer-redesign-support-link" href="home-collection.html#booking"><i class="bi bi-house-heart"></i><span>Home collection</span><i class="bi bi-arrow-up-right"></i></a>
+        <a class="footer-redesign-support-link" href="reports.html"><i class="bi bi-file-earmark-medical"></i><span>Access reports</span><i class="bi bi-arrow-up-right"></i></a>
+        <a class="footer-redesign-support-link" href="contact.html"><i class="bi bi-chat-dots"></i><span>Get support</span><i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-redesign-bottom">
+      <span>© 2026 VitaCheck Diagnostics. All rights reserved.</span>
+      <div class="footer-redesign-legal">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

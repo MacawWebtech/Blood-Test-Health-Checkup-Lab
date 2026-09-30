@@ -1,0 +1,8 @@
+{
+  "name": "vitacheck-diagnostics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VitaCheck diagnostic website with server-backed booking API",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

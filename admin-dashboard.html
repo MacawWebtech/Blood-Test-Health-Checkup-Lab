@@ -1,0 +1,170 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Admin Dashboard | VitaCheck</title>
+    <meta content="Responsive diagnostic dashboard." name="description" />
+    <meta content="#2E6B4E" name="theme-color" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/site-custom.css" rel="stylesheet" />
+    <link href="assets/css/dark-mode.css" rel="stylesheet" />
+    <link href="assets/css/rtl.css" rel="stylesheet" />
+    <link href="assets/css/dashboard.css" rel="stylesheet" />
+  </head>
+  <body class="page-admindash">
+    <a class="skip-link" href="#main"> Skip to content </a>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/images/vitacheck-logo.svg" alt="VitaCheck Diagnostics" />
+        </a>
+        <nav class="side-nav">
+<a class="active" href="admin-dashboard.html#overview"><i class="bi bi-speedometer2"></i><span><strong>Dashboard</strong><small>Operational overview</small></span></a>
+<a href="profile.html"><i class="bi bi-people"></i><span><strong>Patients</strong><small>Profiles and patient activity</small></span></a>
+<a href="tests.html"><i class="bi bi-droplet-half"></i><span><strong>Tests</strong><small>Test catalogue and details</small></span></a>
+<a href="pricing.html"><i class="bi bi-grid-3x3-gap"></i><span><strong>Health Packages</strong><small>Preventive package management</small></span></a>
+<a href="home-collection.html#booking"><i class="bi bi-calendar-check"></i><span><strong>Bookings</strong><small>Appointments and status</small></span></a>
+<a href="home-collection.html"><i class="bi bi-house-heart"></i><span><strong>Home Collections</strong><small>Collection schedule and visits</small></span></a>
+<a href="prescriptions.html"><i class="bi bi-file-earmark-arrow-up"></i><span><strong>Prescriptions</strong><small>Uploaded patient documents</small></span></a>
+<a href="reports.html"><i class="bi bi-file-earmark-medical"></i><span><strong>Reports</strong><small>Results and review queue</small></span></a>
+<a href="payments.html"><i class="bi bi-credit-card"></i><span><strong>Payments</strong><small>Transactions and billing</small></span></a>
+<a href="messages.html"><i class="bi bi-chat-dots"></i><span><strong>Messages</strong><small>Patient support conversations</small></span></a>
+<a href="analytics.html"><i class="bi bi-bar-chart-line"></i><span><strong>Analytics</strong><small>Trends and performance</small></span></a>
+<a href="settings.html"><i class="bi bi-gear"></i><span><strong>Settings</strong><small>System preferences</small></span></a>
+<a href="index.html"><i class="bi bi-box-arrow-left"></i><span><strong>Back to site</strong><small>Return to VitaCheck</small></span></a>
+</nav>
+      </aside>
+      <main class="dash-main">
+        <div class="dash-top">
+          <div>
+            <span class="eyebrow"> Operations </span>
+            <h2>Admin Dashboard</h2>
+          </div>
+          <div style="display: flex; gap: 8px">
+            <button
+              aria-label="Open sidebar"
+              class="icon-btn dash-menu-btn"
+              data-sidebar-toggle=""
+            >
+              <i class="bi bi-list"> </i>
+            </button>
+            <button class="icon-btn" data-theme-toggle="">
+              <i class="bi bi-moon-stars"> </i>
+            </button>
+          </div>
+        </div>
+        <section class="dashboard-welcome">
+  <div><span class="eyebrow">Welcome back, team</span><h1>Keep today’s diagnostic operations moving.</h1><p>Monitor bookings, collections, reports and patient communication from one operational view.</p></div>
+  <a class="btn btn-primary" href="reports.html">Review Reports <i class="bi bi-arrow-right"></i></a>
+</section>
+<div class="metric-grid" id="overview">
+          <div class="metric">
+            <span class="muted"> Total Bookings </span>
+            <strong id="admin-bookings">1,284</strong>
+            <span class="status"> Updated now </span>
+          </div>
+          <div class="metric">
+            <span class="muted"> Tests Today </span>
+            <strong id="admin-tests">186</strong>
+            <span class="status"> Updated now </span>
+          </div>
+          <div class="metric">
+            <span class="muted"> Reports Pending </span>
+            <strong id="admin-pending">43</strong>
+            <span class="status"> Updated now </span>
+          </div>
+          <div class="metric">
+            <span class="muted"> Revenue </span>
+            <strong id="admin-revenue">₹2.8L</strong>
+            <span class="status"> Updated now </span>
+          </div>
+        </div>
+        <section class="section-sm">
+          <div aria-hidden="true" class="medical-motif motif-admindash">
+            <span class="medical-float mf-1">
+              <i class="bi bi-speedometer2"> </i>
+            </span>
+            <span class="medical-float mf-2">
+              <i class="bi bi-clipboard2-data-fill"> </i>
+            </span>
+            <span class="medical-float mf-3">
+              <i class="bi bi-activity"> </i>
+            </span>
+          </div>
+          <div class="grid grid-2">
+            <div class="card">
+              <div class="dashboard-card-title">
+                <h3>Booking trend</h3>
+                <span class="badge">Activity</span>
+              </div>
+              <div class="chart-bars">
+                <span class="bar" style="height: 8%" data-trend-bar> </span>
+                <span class="bar" style="height: 8%" data-trend-bar> </span>
+                <span class="bar" style="height: 8%" data-trend-bar> </span>
+                <span class="bar" style="height: 8%" data-trend-bar> </span>
+                <span class="bar" style="height: 8%" data-trend-bar> </span>
+                <span class="bar" style="height: 8%" data-trend-bar> </span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="dashboard-card-title">
+                <h3>Operations queue</h3>
+              </div>
+              <p class="muted">
+                18 home collections · 9 reports awaiting review · 4 patient
+                messages.
+              </p>
+              <a class="btn btn-primary" href="reports.html">Review queue</a>
+            </div>
+          </div>
+        </section>
+        <section class="section-sm">
+          <div class="card">
+            <div class="dashboard-card-title">
+              <h3>Recent bookings</h3>
+              <a
+                class="btn btn-outline"
+                href="assets/documents/sample-report.pdf"
+              >
+                Download Report
+              </a>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody data-booking-rows><tr><td colspan="4">Connect the VitaCheck server to load live bookings.</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-sm dashboard-quick-panels">
+          <div class="grid grid-2">
+            <article class="card" id="analytics"><span class="iconbox"><i class="bi bi-bar-chart-line"></i></span><h3>Analytics</h3><p class="muted">Monitor server-backed booking volume, test demand and report workflow.</p><a class="btn btn-outline" href="analytics.html">Open Analytics</a></article>
+            <article class="card" id="settings"><span class="iconbox"><i class="bi bi-gear"></i></span><h3>Settings</h3><p class="muted">Manage system display and accessibility preferences.</p><a class="btn btn-outline" href="settings.html">Open Settings</a></article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+  </body>
+</html>

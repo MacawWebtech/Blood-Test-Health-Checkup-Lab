@@ -1,0 +1,501 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Home | VitaCheck</title>
+    <meta
+      content="Book diagnostic tests, home sample collection and secure lab reports."
+      name="description"
+    />
+    <meta content="#2E6B4E" name="theme-color" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/site-custom.css" rel="stylesheet" />
+    <link href="assets/css/dark-mode.css" rel="stylesheet" />
+    <link href="assets/css/rtl.css" rel="stylesheet" />
+  </head>
+  <body class="page-home1">
+    <a class="skip-link" href="#main"> Skip to content </a>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/images/vitacheck-logo.svg" alt="VitaCheck Diagnostics" />
+        </a>
+        <nav aria-label="Primary" class="navlinks">
+          <div class="nav-dropdown">
+            <a class="active nav-drop-trigger" href="index.html">
+              Home
+              <i class="bi bi-chevron-down"> </i>
+            </a>
+            <div class="nav-drop-menu">
+              <a class="active" href="index.html"> Home 1 </a>
+              <a href="home-2.html"> Home 2 </a>
+            </div>
+          </div>
+          <a class="" href="tests.html"> Tests </a>
+          <a class="" href="services.html"> Services </a>
+          <a class="" href="about.html"> About Us </a>
+          <a class="" href="blog.html"> Blog </a>
+          <a class="" href="contact.html"> Contact Us </a>
+        </nav>
+        <div class="nav-actions">
+          <button aria-label="Toggle RTL" class="icon-btn" data-rtl-toggle="">
+            RTL
+          </button>
+          <button
+            aria-label="Toggle theme"
+            class="icon-btn"
+            data-theme-toggle=""
+          >
+            <i class="bi bi-moon-stars"> </i>
+          </button>
+          <a class="btn btn-outline" href="login.html"> My Reports </a>
+          <a class="btn btn-primary" href="tests.html"> Book a Test </a>
+          <button
+            aria-expanded="false"
+            aria-label="Menu"
+            class="icon-btn menu-btn"
+            data-menu-toggle=""
+          >
+            <i class="bi bi-list"> </i>
+          </button>
+        </div>
+      </div>
+      <nav
+        class="mobile-menu container"
+        style="gap: 10px; padding: 12px 0 18px"
+      >
+        <div class="mobile-home-group">
+          <span> Home </span>
+          <a href="index.html"> Home 1 </a>
+          <a href="home-2.html"> Home 2 </a>
+        </div>
+        <a href="tests.html"> Tests </a>
+        <a href="services.html"> Services </a>
+        <a href="about.html"> About Us </a>
+        <a href="blog.html"> Blog </a>
+        <a href="contact.html"> Contact Us </a>
+        <a href="login.html"> My Reports </a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" style="background-image: url('assets/images/backgrounds/hero.jpg');">
+        <div aria-hidden="true" class="medical-motif motif-home1">
+          <span class="medical-float mf-1">
+            <i class="bi bi-droplet-fill"> </i>
+          </span>
+          <span class="medical-float mf-2">
+            <i class="bi bi-heart-pulse-fill"> </i>
+          </span>
+          <span class="medical-float mf-3">
+            <i class="bi bi-capsule"> </i>
+          </span>
+        </div>
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow"> Preventive diagnostics, rethought </span>
+            <h1>Health answers without the hospital feeling.</h1>
+            <p class="lead">
+              Book blood tests, schedule home collection, follow sample progress
+              and receive secure reports—all through one clear diagnostic
+              journey.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tests.html">
+                <i class="bi bi-droplet"> </i>
+                Explore tests
+              </a>
+              <a class="btn btn-outline" href="home-collection.html">
+                Schedule home collection
+              </a>
+            </div>
+            <div class="trust-row">
+              <span class="trust-item">
+                <i class="bi bi-shield-check"> </i>
+                Quality controlled
+              </span>
+              <span class="trust-item">
+                <i class="bi bi-house-heart"> </i>
+                Home collection
+              </span>
+              <span class="trust-item">
+                <i class="bi bi-file-earmark-lock"> </i>
+                Secure reports
+              </span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img
+              alt="Modern diagnostic laboratory"
+              src="assets/images/backgrounds/home-hero.jpg"
+            />
+            <div class="floating-card float-top">
+              <span class="badge"> Report ready </span>
+              <strong style="display: block; margin-top: 7px">
+                CBC · 6h turnaround
+              </strong>
+            </div>
+            <div class="floating-card float-bottom">
+              <strong> Home collection </strong>
+              <p class="muted" style="margin: 5px 0 0">
+                Choose a slot. A trained collector comes to you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="search-panel">
+        <div class="container">
+          <div class="search-shell">
+            <input
+              aria-label="Search tests"
+              placeholder="Search CBC, thyroid, diabetes, vitamins…"
+            />
+            <select aria-label="Test category">
+              <option>All categories</option>
+              <option>General health</option>
+              <option>Heart health</option>
+              <option>Women's health</option>
+            </select>
+            <a class="btn btn-primary" href="tests.html"> Find tests </a>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <span class="eyebrow"> Popular health packages </span>
+          <h2>Preventive checks for real life.</h2>
+          <div class="grid grid-4" style="margin-top: 28px">
+            <article class="card package-card reveal">
+              <span class="badge"> Popular </span>
+              <h3>Essential Check</h3>
+              <div class="price">₹899</div>
+              <div class="package-meta">
+                <span> 54 tests </span>
+                <span> 8h fast </span>
+                <span> Blood sample </span>
+                <span> Report in 12h </span>
+              </div>
+              <a class="btn btn-outline" href="test-details.html">
+                View package
+              </a>
+            </article>
+            <article class="card package-card reveal">
+              <span class="badge"> Cardiac </span>
+              <h3>Heart Focus</h3>
+              <div class="price">₹1299</div>
+              <div class="package-meta">
+                <span> 68 tests </span>
+                <span> 10h fast </span>
+                <span> Blood sample </span>
+                <span> Report in 12h </span>
+              </div>
+              <a class="btn btn-outline" href="test-details.html">
+                View package
+              </a>
+            </article>
+            <article class="card package-card reveal">
+              <span class="badge"> Wellness </span>
+              <h3>Women Wellness</h3>
+              <div class="price">₹1499</div>
+              <div class="package-meta">
+                <span> 72 tests </span>
+                <span> 8h fast </span>
+                <span> Blood sample </span>
+                <span> Report in 12h </span>
+              </div>
+              <a class="btn btn-outline" href="test-details.html">
+                View package
+              </a>
+            </article>
+            <article class="card package-card reveal">
+              <span class="badge"> 60+ care </span>
+              <h3>Senior Plus</h3>
+              <div class="price">₹1899</div>
+              <div class="package-meta">
+                <span> 86 tests </span>
+                <span> 10h fast </span>
+                <span> Blood sample </span>
+                <span> Report in 12h </span>
+              </div>
+              <a class="btn btn-outline" href="test-details.html">
+                View package
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section-sm">
+        <div class="container split">
+          <div class="image-frame reveal">
+            <img
+              alt="Home blood sample collection"
+              src="assets/images/home/home-collection.jpg"
+            />
+          </div>
+          <div>
+            <span class="eyebrow"> Home collection </span>
+            <h2>Your living room can be the waiting room.</h2>
+            <div class="process">
+              <div class="process-item">
+                <h3>Pick a test</h3>
+                <p class="muted">Choose a single test or preventive package.</p>
+              </div>
+              <div class="process-item">
+                <h3>Select a slot</h3>
+                <p class="muted">Choose a convenient collection window.</p>
+              </div>
+              <div class="process-item">
+                <h3>Track the sample</h3>
+                <p class="muted">See every stage from collected to verified.</p>
+              </div>
+              <div class="process-item">
+                <h3>Download the report</h3>
+                <p class="muted">Access completed reports securely.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container bento">
+          <div class="card reveal">
+            <span class="eyebrow"> Why VitaCheck </span>
+            <h2>Built around the moments patients usually find confusing.</h2>
+            <p class="lead">
+              Clear preparation guidance, visible turnaround estimates, digital
+              tracking and secure report access reduce uncertainty at every
+              step.
+            </p>
+            <div class="grid grid-2" style="margin-top: 28px">
+              <div>
+                <div class="iconbox">
+                  <i class="bi bi-patch-check"> </i>
+                </div>
+                <h3>Quality-led process</h3>
+                <p class="muted">
+                  Defined collection, processing and verification stages.
+                </p>
+              </div>
+              <div>
+                <div class="iconbox">
+                  <i class="bi bi-person-check"> </i>
+                </div>
+                <h3>Trained collectors</h3>
+                <p class="muted">
+                  Professional home collection workflow and identity checks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="iconbox">
+              <i class="bi bi-clock-history"> </i>
+            </div>
+            <h3>Turnaround first</h3>
+            <p class="muted">
+              Every package clearly shows an expected reporting window.
+            </p>
+          </div>
+          <div class="card reveal">
+            <div class="iconbox">
+              <i class="bi bi-lock"> </i>
+            </div>
+            <h3>Private by design</h3>
+            <p class="muted">
+              Reports remain within the patient portal experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-sm">
+        <div class="container stats-strip">
+          <div class="grid grid-4">
+            <div class="stat">
+              <strong> 98k+ </strong>
+              <span> tests processed </span>
+            </div>
+            <div class="stat">
+              <strong> 26k+ </strong>
+              <span> home collections </span>
+            </div>
+            <div class="stat">
+              <strong> 24/7 </strong>
+              <span> digital report access </span>
+            </div>
+            <div class="stat">
+              <strong> 12h </strong>
+              <span> popular package target </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="split">
+            <div>
+              <span class="eyebrow"> Sample visibility </span>
+              <h2>See exactly where your test stands.</h2>
+              <p class="lead">
+                No vague “processing” message. The patient portal breaks your
+                journey into understandable checkpoints.
+              </p>
+              <a class="btn btn-outline" href="reports.html">
+                See report workflow
+              </a>
+            </div>
+            <div class="card">
+              <div class="timeline">
+                <div class="timeline-step">Booked</div>
+                <div class="timeline-step">Collected</div>
+                <div class="timeline-step">Processing</div>
+                <div class="timeline-step">Review</div>
+                <div class="timeline-step">Ready</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div>
+              <span class="eyebrow" style="color: white">
+                Ready when you are
+              </span>
+              <h2>From booking to report, keep every step visible.</h2>
+              <p class="lead">
+                Choose a test, schedule collection and access completed reports
+                from one patient-friendly portal.
+              </p>
+            </div>
+            <div>
+              <a class="btn btn-dark" href="tests.html"> Book a test </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container grid grid-3 three-item-grid">
+          <article class="card reveal">
+            <p class="quote">
+              “The tracking view made the whole process feel much less
+              uncertain.”
+            </p>
+            <strong> Patient story · Chennai </strong>
+          </article>
+          <article class="card reveal">
+            <p class="quote">
+              “I could see fasting instructions before confirming the
+              appointment.”
+            </p>
+            <strong> Patient story · Bengaluru </strong>
+          </article>
+          <article class="card reveal">
+            <p class="quote">
+              “The report portal is clean enough for my parents to use.”
+            </p>
+            <strong> Patient story · Coimbatore </strong>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="home-blog-detail-link reveal">
+            <article class="home-blog-detail-copy">
+              <span class="eyebrow">From the VitaCheck journal</span>
+              <h2>Understand your lab journey beyond the numbers.</h2>
+              <p class="lead">Explore practical guidance on preparing for tests, reading common report markers and making your next lab visit easier to plan.</p>
+            </article>
+            <div class="home-blog-detail-action">
+              <span class="eyebrow">Featured insight</span>
+              <h3>What to know before your next blood test</h3>
+              <p>Read the complete article for simple preparation and follow-up guidance.</p>
+              <a class="btn btn-primary" href="blog-details.html">Read blog details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <footer class="footer footer-modern footer-redesign">
+  <div class="container footer-redesign-shell">
+    <div class="footer-redesign-top">
+      <div class="footer-redesign-brand">
+        <a class="brand footer-brand" href="index.html" aria-label="VitaCheck Diagnostics home">
+          <img class="brand-logo" src="assets/images/vitacheck-logo.svg" alt="VitaCheck Diagnostics" />
+        </a>
+        <p>Clear testing, convenient collection and secure digital reports — designed to make every step of your lab journey easier to follow.</p>
+      </div>
+      <div class="footer-redesign-cta">
+        <span class="footer-redesign-eyebrow">PATIENT SUPPORT</span>
+        <strong>Ready to take the next step?</strong>
+        <div class="footer-redesign-actions">
+          <a class="footer-redesign-btn footer-redesign-btn-primary" href="tests.html"><i class="bi bi-calendar2-check"></i> Book a Test</a>
+          <a class="footer-redesign-btn" href="contact.html"><i class="bi bi-headset"></i> Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-redesign-divider" aria-hidden="true"></div>
+
+    <div class="footer-redesign-grid">
+      <div class="footer-redesign-column">
+        <h3>Testing</h3>
+        <a href="tests.html">All Tests</a>
+        <a href="test-details.html">Test Details</a>
+        <a href="home-collection.html">Home Collection</a>
+        <a href="pricing.html">Health Packages</a>
+        <a href="services.html">Lab Services</a>
+      </div>
+      <div class="footer-redesign-column">
+        <h3>Explore</h3>
+        <a href="about.html">About Us</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="blog.html">Health Guides</a>
+        <a href="service-details.html">Service Details</a>
+        <a href="contact.html">Help &amp; Contact</a>
+      </div>
+      <div class="footer-redesign-column">
+        <h3>Patient Access</h3>
+        <a href="register.html">Create Account</a>
+        <a href="login.html">Sign In</a>
+        <a href="patient-dashboard.html">Patient Dashboard</a>
+        <a href="reports.html">My Reports</a>
+        <a href="forgot-password.html">Reset Password</a>
+      </div>
+      <div class="footer-redesign-column footer-redesign-support">
+        <h3>Quick Help</h3>
+        <p>Need help with booking, sample collection or report access? Start with the option that matches your need.</p>
+        <a class="footer-redesign-support-link" href="home-collection.html#booking"><i class="bi bi-house-heart"></i><span>Home collection</span><i class="bi bi-arrow-up-right"></i></a>
+        <a class="footer-redesign-support-link" href="reports.html"><i class="bi bi-file-earmark-medical"></i><span>Access reports</span><i class="bi bi-arrow-up-right"></i></a>
+        <a class="footer-redesign-support-link" href="contact.html"><i class="bi bi-chat-dots"></i><span>Get support</span><i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-redesign-bottom">
+      <span>© 2026 VitaCheck Diagnostics. All rights reserved.</span>
+      <div class="footer-redesign-legal">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

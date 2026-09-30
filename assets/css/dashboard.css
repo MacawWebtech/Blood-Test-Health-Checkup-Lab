@@ -1,0 +1,14 @@
+.dashboard .site-header,.dashboard .footer{display:none}.dashboard-card-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}.report-list{display:grid;gap:12px}.report-row{display:grid;grid-template-columns:1.3fr .8fr .8fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}@media(max-width:700px){.report-row{grid-template-columns:1fr}.report-row .btn{width:100%}}
+
+/* Dashboard information architecture */
+.dashboard .sidebar .brand-logo { width:42px; height:42px; flex-basis:42px; }
+.side-nav > a { align-items:flex-start; gap:12px; padding:11px 12px; }
+.side-nav > a > i { width:22px; flex:0 0 22px; margin-top:2px; }
+.side-nav > a > span { display:grid; gap:2px; min-width:0; }
+.side-nav > a strong { font-size:.92rem; line-height:1.2; }
+.side-nav > a small { color:rgba(255,255,255,.52); font-size:.72rem; line-height:1.25; }
+.side-nav > a:hover small,.side-nav > a.active small { color:rgba(255,255,255,.72); }
+.dashboard-welcome { display:flex; align-items:center; justify-content:space-between; gap:28px; padding:30px; margin:0 0 8px; border-radius:26px; background:linear-gradient(135deg,color-mix(in srgb,var(--primary) 14%,var(--surface-2)),var(--surface-2)); border:1px solid var(--line); box-shadow:var(--shadow); }
+.dashboard-welcome h1 { font-size:clamp(1.7rem,3vw,2.65rem); max-width:760px; margin:7px 0 10px; }
+.dashboard-welcome p { margin:0; color:var(--muted); max-width:760px; }
+@media (max-width:700px) { .dashboard-welcome { align-items:flex-start; flex-direction:column; padding:22px; } .dashboard-welcome .btn { width:100%; } .dashboard .sidebar .brand-logo { width:36px; height:36px; flex-basis:36px; } }
